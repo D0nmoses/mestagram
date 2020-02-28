@@ -24,6 +24,11 @@ class Image(models.Model):
     image_location = models.ForeignKey(Location,on_delete=models.CASCADE)
     image_category = models.ManyToManyField(Category)
 
+    @classmethod
+    def all_images(cls):
+        images = cls.objects.all()
+        return images
+
 
 
 
