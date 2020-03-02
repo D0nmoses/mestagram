@@ -13,7 +13,7 @@ A django based web application allowing users to view my pictures.
 - PostgreSQL database support with psycopg2.
 
 ## Environment Variables
-SECRET_KEY=XXX
+```SECRET_KEY=XXX
 DEBUG=True
 DB_NAME='mestagram'
 DB_USER='don'
@@ -22,6 +22,8 @@ DB_HOST='127.0.0.1'
 MODE='prod'
 ALLOWED_HOSTS='.localhost','.herokuapp.com','.127.0.0.1'
 DISABLE_COLLECTSTATIC=1
+```
+
 ## Deployment
 
 It is possible to deploy to Heroku or to your own server.
@@ -34,6 +36,7 @@ $ heroku addons:add heroku-postgresql:hobby-dev
 $ heroku pg:promote DATABASE_URL
 $ heroku config:set ENVIRONMENT=PRODUCTION
 $ heroku config:set DJANGO_SECRET_KEY=os.config('SECRET_KEY')
+```
 
 ## Built With
 
