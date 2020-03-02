@@ -11,6 +11,8 @@ django-bootstrap3 = "*"
 pillow = "*"
 psycopg2 = "*"
 gunicorn = "*"
+whitenoise = "*"
+django-heroku = "*"
 
 [requires]
 python_version = "3.6"
