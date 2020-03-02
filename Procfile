@@ -1,0 +1,1 @@
+web: gunicorn mestagram.wsgi --log-file -
