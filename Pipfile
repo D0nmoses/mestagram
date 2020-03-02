@@ -10,6 +10,7 @@ django = "*"
 django-bootstrap3 = "*"
 pillow = "*"
 psycopg2 = "*"
+gunicorn = "*"
 
 [requires]
 python_version = "3.6"
