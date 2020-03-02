@@ -5,13 +5,13 @@
 <div class = "container">
     {% for image in images %}
         <div class="col">
-            <div class="card dpg-album-card">
+            <div class="card">
                 <div class="card-image">
-                    <img src="{{ image.image.url }}" alt="{{ image.image_name }}" class="dpg-album-card-image" />
+                    <img src="{{ image.image.url }}" alt="{{ image.image_name }}" class="img-responsive" />
                 </div>
                 <div class="card-content">
-                    <span class="card-title">{{ image.name }}</span>
-                    <p>{{ image.image_description|truncatechars:120 }}</p>
+                    <span class="card-title">{{ image.image_name }}</span>
+                    <p>{{ image.imade_description|truncatechars:120 }}</p>
                 </div>
             </div>
         </div>
