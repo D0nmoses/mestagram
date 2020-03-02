@@ -27,6 +27,18 @@ class Image(models.Model):
     @classmethod
     def all_images(cls):
         images = cls.objects.all()
+        images_list = list(images)
+        return images_list
+
+    def save_image(self):
+        self.save()
+
+    def delete_image(self):
+        self.delete()
+
+    @classmethod
+    def search_by_category(cls, search_term):
+        images = cls.objects.filter(title__icontains=search_term)
         return images
 
 
