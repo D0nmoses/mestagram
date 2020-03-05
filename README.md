@@ -47,6 +47,10 @@ $ heroku config:set DJANGO_SECRET_KEY=os.config('SECRET_KEY')
 
 We use [Git](https://git-scm.com/) for versioning. 
 
+## Codebeat Grade
+
+[![codebeat badge](https://codebeat.co/badges/f8107475-d62a-4d5c-b2cb-9c601ce9c48a)](https://codebeat.co/projects/github-com-d0nmoses-mestagram-master)
+
 ## Authors
 
 * *Don Moses** - *Initial work* 
